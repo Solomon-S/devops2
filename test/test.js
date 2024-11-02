@@ -11,4 +11,10 @@ describe('First two terms', function() {
       assert.strictEqual(main.fibonacci(0), 0);
       assert.strictEqual(main.fibonacci(1), 1);
     });
-})
+});
+
+describe('Negative', function() {
+  it('should return undefined', function() {
+      assert.strictEqual(main.fibonacci(-1),undefined );
+    });
+});
